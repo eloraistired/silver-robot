@@ -1,0 +1,46 @@
+/* Header
+   ========================================================================== */
+
+header {
+    padding: clamp(8px, 1.5vw, 10rem) 0;
+    .inner-header {
+        max-height: $header-height;
+
+        .logo {
+            gap: 7px;
+            color: $secondary-dark-accent;
+            font-size: $logo-height;
+            font-weight: 600;
+
+            .logo-path {
+                color: $main-dark-accent;
+                font-size: 0em;
+                display: block;
+                height: $logo-height;
+                width: $logo-width;
+            }
+            .separate_line {
+                height: $logo-height + 1px;
+                background: currentColor;
+                width: 3px;
+            }
+            .version {
+                background: $main-dark-accent;
+                color: $secondary-black;
+                font-size: .6rem;
+                padding: 5px .8rem;
+                border-radius: 3px;
+                line-height: 1.2;
+            }
+        }
+
+        .right_wrapper {
+            span {
+                display: block;
+                color: $main-dark-accent;
+                height: $logo-height * 1.5;
+                width: $logo-width * 1.5;
+            }
+        }
+    }
+}
