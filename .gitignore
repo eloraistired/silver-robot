@@ -1,0 +1,10 @@
+dist
+node_modules
+.env
+/*.log
+yarn-error.log
+error.log
+combined.log
+.cache
+.parcel-cache
+package-lock.json
