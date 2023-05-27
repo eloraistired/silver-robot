@@ -1,0 +1,30 @@
+{
+  "name": "parcel-pug-boilerplate",
+  "version": "1.0.0",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "description": "",
+  "scripts": {
+    "serve": "parcel src/index.pug",
+    "clean": "rm -rf dist/*",
+    "build:clean": "parcel build src/index.pug --no-content-hash --no-source-maps --public-url ./",
+    "build:parcel": "parcel build src/index.pug --public-url ./",
+    "build": "npm run clean && npm run build:parcel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/eloraa/parcel-pug-boilerplate"
+  },
+  "keywords": [],
+  "author": "Neon",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@parcel/packager-raw-url": "2.8.3",
+    "@parcel/transformer-pug": "2.8.3",
+    "@parcel/transformer-sass": "2.8.3",
+    "@parcel/transformer-webmanifest": "2.8.3",
+    "parcel": "latest",
+    "pug": "^3.0.2",
+    "sass": "^1.62.1"
+  }
+}

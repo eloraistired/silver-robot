@@ -1,0 +1,42 @@
+/* Footer
+   ========================================================================== */
+
+footer {
+    padding: clamp(14px,2vw,28px) 0;
+    font-size: .7rem;
+    font-weight: 500;
+    background-image: linear-gradient(to right, #222 0 10%, rgba(255, 255, 255, 0) 10%);
+    background-position: top;
+    background-size: 8px 1px;
+    background-repeat: repeat-x;
+
+    .inner-footer {
+        flex-wrap: wrap;
+        gap: 5px;
+
+        .left_wrapper .switch_theme {
+            cursor: pointer;
+            gap: 5px;
+            .icon {
+                height: $icon-height;
+                width: $icon-width;
+            }
+            .text {
+                position: relative;
+                margin-left: 5px;
+                line-height: .8;
+            }
+        }
+        .right_wrapper {
+            span {
+                display: block;
+            }
+        }
+
+        
+    }
+}
+
+html.light footer {
+    font-weight: 600;
+}

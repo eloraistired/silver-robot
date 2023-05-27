@@ -1,0 +1,56 @@
+/* Header
+   ========================================================================== */
+
+header {
+    padding: clamp(8px, 1.5vw, 10rem) 0;
+    .inner-header {
+        max-height: $header-height;
+        font-size: .7rem;
+        font-weight: 600;
+
+        .logo {
+            gap: 7px;
+            color: $secondary-accent;
+            margin: 0;
+
+            .logo-path {
+                color: $main-accent;
+                font-size: 0em;
+                display: block;
+                height: $logo-height;
+                width: $logo-width;
+            }
+            .opacity {
+                color: $secondary-accent;
+            }
+            .separate_line {
+                height: $logo-height + .5px;
+                background: currentColor;
+                width: 3px;
+            }
+            .version {
+                background: $main-accent;
+                color: $secondary-black;
+                font-size: .6rem;
+                padding: 5px .8rem;
+                border-radius: 3px;
+                line-height: 1.2;
+                font-weight: 900;
+            }
+        }
+
+        .right_wrapper {
+            span {
+                display: block;
+                color: $main-accent;
+            }
+        }
+    }
+}
+
+html.light header {
+    .inner-header .logo .version {
+        background: $secondary-accent;
+        color: $black;
+    }
+}

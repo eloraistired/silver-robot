@@ -1,0 +1,17 @@
+$main-accent: #E2D877;
+$secondary-accent: #FAF6C9;
+$faded: #6D6A4F;
+$black: #000;
+$secondary-black: #171714;
+$bg-color: #0F0F0E;
+$accent-white: #FAF6C9;
+
+html.light {
+    $main-accent: #010101!global;
+    $secondary-accent: #0f0!global;
+    $faded: #6D6A4F;
+    $bg-color: #fff!global;
+    $accent-white: #fdfdff!global;    
+}
+
+
